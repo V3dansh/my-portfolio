@@ -2,7 +2,7 @@ import React from 'react';
 import Info from '../../Components/info';
 import Stats from './../../Components/Stats'
 import { FaDownload } from 'react-icons/fa';
-import CV from '../../Assets/Updated-OverLeaf Srijal Vedansh Resume.pdf';
+import CV from '../../Assets/Srijal_Vedansh_Resume_August.pdf';
 import Skills from '../../Components/skills';
 import './About.css';
 import { Resume } from '../../info';
@@ -56,6 +56,7 @@ const About = () => {
               if(val.category==='experience'){
                 return < ResumeItem key={val.id} {...val}/>
               }
+              return null;
             })}
           </div>
           <div className='resume__data'>
@@ -63,6 +64,7 @@ const About = () => {
               if(val.category==='education'){
                 return <ResumeItem key={val.id} {...val}/>;
               }
+              return null;
             })}
           </div>
         </div>
